@@ -33,19 +33,21 @@ fetch(url, options)
     `;
       movieCardsWrap.innerHTML += temp_html;
     });
-
-    // 카드 클릭 시 해당 카드의 영화 id alert창 띄우기.
-    let movieCards = document.querySelectorAll('.movie_cards');
-    movieCards.forEach((card) => {
-      card.addEventListener('click', function () {
-        let moviesId = this.getAttribute('data-id');
-        alert(`영화 id: ${moviesId}`);
-      });
-    });
+    idAlert();
   })
   .catch((err) => {
     console.error('에러 발생', error);
   });
+// 카드 클릭 시 해당 카드의 영화 id alert창 띄우기.
+function idAlert() {
+  let movieCards = document.querySelectorAll('.movie_cards');
+  movieCards.forEach((card) => {
+    card.addEventListener('click', function () {
+      let moviesId = this.getAttribute('data-id');
+      alert(`영화 id: ${moviesId}`);
+    });
+  });
+}
 
 function movieSearch() {
   let searchInput = document.querySelector('#movie_search').value;
@@ -74,8 +76,8 @@ function movieSearch() {
       `;
         })
         .join('');
-
       movieCardsWrap.innerHTML = movieContent;
+      idAlert();
     })
     .catch((error) => {
       console.error('에러 발생:', error);
