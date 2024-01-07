@@ -27,7 +27,8 @@
   <script src="./main.js"></script>
   <script>
     // 'Enter 키 누르면 영화 검색'
-    document.querySelector('#movie_search').addEventListener('keypress', function (e) {
+    let searchKey = document.querySelector('#movie_search');
+    searchKey.addEventListener('keypress', function (e) {
       if (e.key === 'Enter') {
         movieSearch()
       }

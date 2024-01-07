@@ -38,6 +38,7 @@ fetch(url, options)
   .catch((err) => {
     console.error('에러 발생', error);
   });
+
 // 카드 클릭 시 해당 카드의 영화 id alert창 띄우기.
 function idAlert() {
   let movieCards = document.querySelectorAll('.movie_cards');
@@ -48,7 +49,7 @@ function idAlert() {
     });
   });
 }
-
+// 영화 검색 기능
 function movieSearch() {
   let searchInput = document.querySelector('#movie_search').value;
   let url = `https://api.themoviedb.org/3/search/movie?query=${searchInput}&language=en-US&page=1&include_adult=false`;
