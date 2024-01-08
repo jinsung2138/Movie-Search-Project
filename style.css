@@ -56,13 +56,14 @@ header label {
   background-color: rgb(244, 244, 244);
   box-shadow: 0 1px 1px gray;
 }
-main {
+/* main {
   margin: 0 auto;
   width: 1070px;
-}
+} */
 .movie_cards_wrap {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .movie_cards {
   width: 330px;
@@ -80,9 +81,9 @@ main {
   background-color: rgb(244, 244, 244);
   box-shadow: 0 5px 5px gray;
 }
-.movie_cards:nth-child(3n) {
+/* .movie_cards:nth-child(3n) {
   margin-right: 0;
-}
+} */
 .movie_cards #poster_img {
   display: block;
   width: 100%;
