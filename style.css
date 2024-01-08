@@ -56,14 +56,14 @@ header label {
   background-color: rgb(244, 244, 244);
   box-shadow: 0 1px 1px gray;
 }
-/* main {
+main {
   margin: 0 auto;
-  width: 1070px;
-} */
+  width: 1850px;
+}
 .movie_cards_wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 .movie_cards {
   width: 330px;
@@ -72,7 +72,7 @@ header label {
   background-color: rgb(217, 217, 217);
   border-radius: 10px;
   margin-top: 20px;
-  margin-right: 40px;
+  margin: 0 20px;
   margin-bottom: 20px;
   cursor: pointer;
   transition: all 0.3s;
@@ -81,9 +81,6 @@ header label {
   background-color: rgb(244, 244, 244);
   box-shadow: 0 5px 5px gray;
 }
-/* .movie_cards:nth-child(3n) {
-  margin-right: 0;
-} */
 .movie_cards #poster_img {
   display: block;
   width: 100%;
